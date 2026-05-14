@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday, Nayla ❤️</title>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background Music -->
+    <audio id="bgMusic" loop preload="auto">
+        <source src="assets/music/romantic-piano.mp3" type="audio/mpeg">
+    </audio>
+    
+    <!-- Music Control -->
+    <div class="music-control">
+        <button id="musicToggle" class="music-btn">
+            <span class="music-icon">🎵</span>
+        </button>
+    </div>
+
+    <!-- Floating Hearts -->
+    <div class="floating-hearts" id="heartsContainer"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Nayla ❤️</div>
+            <ul class="nav-menu">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#gallery">Memories</a></li>
+                <li><a href="#message">Message</a></li>
+                <li><a href="#closing">Forever</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">Happy Birthday</h1>
+                <h2 class="hero-subtitle editable-name">Nayla Uswatun Khasanah</h2>
+                <p class="hero-description">Selamat ulang tahun sayangku yang paling spesial. Hari ini kita rayakan kebahagiaanmu yang penuh cinta dan harapan. 💜</p>
+                <div class="countdown" id="countdown">
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="days">00</span>
+                        <span class="countdown-label">Hari</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="hours">00</span>
+                        <span class="countdown-label">Jam</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="minutes">00</span>
+                        <span class="countdown-label">Menit</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="seconds">00</span>
+                        <span class="countdown-label">Detik</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Memories Gallery -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2 class="section-title">Kenangan Indah Kita</h2>
+            <p class="section-subtitle">Wishing you 6 memory photos - Ganti dengan foto kenangan kalian berdua</p>
+            <div class="gallery-grid">
+                <!-- Photo 1 - Fade Up -->
+                <div class="gallery-item fade-up" data-animation="fade-up">
+                    <div class="photo-container">
+                        <img src="assets/images/photo1.jpg" alt="Kenangan 1" loading="lazy">
+                        <div class="photo-overlay">
+                            <div class="photo-info">
+                                <h3>Momen Pertama</h3>
+                                <p>Awal dari kisah cinta kita</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Photo 2 - Zoom In -->
+                <div class="gallery-item zoom-in" data-animation="zoom-in">
+                    <div class="photo-container">
+                        <img src="assets/images/photo2.jpg" alt="Kenangan 2" loading="lazy">
+                        <div class="photo-overlay">
+                            <div class="photo-info">
+                                <h3>Tertawa Bersama</h3>
+                                <p>Senyummu adalah cahaya hidupku</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Photo 3 - Slide Left -->
+                <div class="gallery-item slide-left" data-animation="slide-left">
+                    <div class="photo-container">
+                        <img src="assets/images/photo3.jpg" alt="Kenangan 3" loading="lazy">
+                        <div class="photo-overlay">
+                            <div class="photo-info">
+                                <h3>Senja Romantis</h3>
+                                <p>Momen yang menyentuh hati</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Photo 4 - Slide Right -->
+                <div class="gallery-item slide-right" data-animation="slide-right">
+                    <div class="photo-container">
+                        <img src="assets/images/photo4.jpg" alt="Kenangan 4" loading="lazy">
+                        <div class="photo-overlay">
+                            <div class="photo-info">
+                                <h3>Malam Hangat</h3>
+                                <p>Hanya kamu dan aku</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Photo 5 - Parallax -->
+                <div class="gallery-item parallax" data-animation="parallax">
+                    <div class="photo-container">
+                        <img src="assets/images/photo5.jpg" alt="Kenangan 5" loading="lazy">
+                        <div class="photo-overlay">
+                            <div class="photo-info">
+                                <h3>Selamanya Bersama</h3>
+                                <p>Setiap detik bersamamu istimewa</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Photo 6 - Floating -->
+                <div class="gallery-item floating" data-animation="floating">
+                    <div class="photo-container">
+                        <img src="assets/images/photo6.jpg" alt="Kenangan 6" loading="lazy">
+                        <div class="photo-overlay">
+                            <div class="photo-info">
+                                <h3>Cerita Cinta Kita</h3>
+                                <p>Bab terbaik dalam hidupku</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sweet Message Section -->
+    <section id="message" class="message">
+        <div class="container">
+            <div class="message-content">
+                <h2 class="section-title editable-title">Happy birthday, Nayyyy 🎉</h2>
+                <div class="message-card glass-card">
+                    <div class="message-text">
+                        <p><strong>Wishing you become president.</strong></p>
+                        <br>
+                        <p class="editable-message">
+                            Aku berharap semoga semua keinginan kamu di tahun ini terpenuhi, kesehatan tetap terjaga, hati tetap tenang, 
+                            dan semua yang lagi kamu perjuangin bisa berjalan lancar.
+                        </p>
+                        <br>
+                        <p class="editable-message">
+                            Dan semoga kamu diterima di PTN favorit kamu ya. Semoga semua usaha dan kerja keras yang udah 
+                            kamu lewati bisa terbayar dengan hasil terbaik yang memang kamu pantas dapetin.
+                        </p>
+                        <br>
+                        <p class="editable-message">
+                            Sekali lagi, happy birthday. Nayla 💜
+                        </p>
+                    </div>
+                    <div class="signature">
+                        <span>Dengan cinta selamanya,</span>
+                        <h3>Pasanganmu</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Romantic Closing -->
+    <section id="closing" class="closing">
+        <div class="container">
+            <div class="closing-content">
+                <h2 class="section-title">Untuk Banyak Ulang Tahun Lagi Bersama</h2>
+                <div class="love-stats">
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="365">0</span>
+                        <span class="stat-label">Hari Penuh Cinta</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="∞">0</span>
+                        <span class="stat-label">Lebih Banyak Lagi</span>
+                    </div>
+                </div>
+                <p class="closing-text">Untuk kita, untuk cinta, untuk selamanya. Selamat ulang tahun, hatiku. 💜</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
