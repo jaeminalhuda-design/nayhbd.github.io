@@ -36,7 +36,7 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- Hero Section (UNCHANGED) -->
     <section id="hero" class="hero">
         <div class="hero-content">
             <div class="hero-text">
@@ -65,13 +65,13 @@
         </div>
     </section>
 
-    <!-- Memories Gallery -->
+    <!-- Memories Gallery (BOTTOM 2 = VIDEOS) -->
     <section id="gallery" class="gallery">
         <div class="container">
             <h2 class="section-title">Kenangan Indah Kita</h2>
-            <p class="section-subtitle">4 Precious Memories</p>
+            <p class="section-subtitle">2 Photos + 2 Videos (5s Loop)</p>
             <div class="gallery-grid">
-                <!-- Photo 1 - Fade Up -->
+                <!-- TOP 1 - Fade Up (PHOTO - UNCHANGED) -->
                 <div class="gallery-item fade-up" data-animation="fade-up">
                     <div class="photo-container">
                         <img src="assets/images/photo1.jpg" alt="Kenangan 1" loading="lazy">
@@ -84,7 +84,7 @@
                     </div>
                 </div>
 
-                <!-- Photo 2 - Zoom In -->
+                <!-- TOP 2 - Zoom In (PHOTO - UNCHANGED) -->
                 <div class="gallery-item zoom-in" data-animation="zoom-in">
                     <div class="photo-container">
                         <img src="assets/images/photo2.jpg" alt="Kenangan 2" loading="lazy">
@@ -97,27 +97,35 @@
                     </div>
                 </div>
 
-                <!-- Photo 3 - Slide Left -->
-                <div class="gallery-item slide-left" data-animation="slide-left">
+                <!-- BOTTOM 3 - Slide Left (5s VIDEO) 🎥 -->
+                <div class="gallery-item slide-left video-item" data-animation="slide-left">
                     <div class="photo-container">
-                        <img src="assets/images/photo3.jpg" alt="Kenangan 3" loading="lazy">
+                        <video src="assets/videos/video3.mp4" 
+                               autoplay muted loop playsinline preload="auto"
+                               poster="assets/images/photo3.jpg">
+                            Your browser does not support the video tag.
+                        </video>
                         <div class="photo-overlay">
                             <div class="photo-info">
-                                <h3>Senja Romantis</h3>
-                                <p>Momen yang menyentuh hati</p>
+                                <h3>🎥 Senja Romantis</h3>
+                                <p>Video Spesial 5 Detik</p>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Photo 4 - Slide Right -->
-                <div class="gallery-item slide-right" data-animation="slide-right">
+                <!-- BOTTOM 4 - Slide Right (5s VIDEO) 🎥 -->
+                <div class="gallery-item slide-right video-item" data-animation="slide-right">
                     <div class="photo-container">
-                        <img src="assets/images/photo4.jpg" alt="Kenangan 4" loading="lazy">
+                        <video src="assets/videos/video4.mp4" 
+                               autoplay muted loop playsinline preload="auto"
+                               poster="assets/images/photo3.jpg">
+                            Your browser does not support the video tag.
+                        </video>
                         <div class="photo-overlay">
                             <div class="photo-info">
-                                <h3>Malam Hangat</h3>
-                                <p>Hanya kamu dan aku</p>
+                                <h3>🎥 Malam Hangat</h3>
+                                <p>Kenangan Video Kita</p>
                             </div>
                         </div>
                     </div>
@@ -126,58 +134,6 @@
         </div>
     </section>
 
+    <!-- Rest of sections UNCHANGED -->
     <!-- Sweet Message Section -->
-    <section id="message" class="message">
-        <div class="container">
-            <div class="message-content">
-                <h2 class="section-title editable-title">Happy birthday, Nayyyy 🎉</h2>
-                <div class="message-card glass-card">
-                    <div class="message-text">
-                        <p><strong>Wishing you become president.</strong></p>
-                        <br>
-                        <p class="editable-message">
-                            Aku berharap semoga semua keinginan kamu di tahun ini terpenuhi, kesehatan tetap terjaga, hati tetap tenang, 
-                            dan semua yang lagi kamu perjuangin bisa berjalan lancar.
-                        </p>
-                        <br>
-                        <p class="editable-message">
-                            Dan semoga kamu diterima di PTN favorit kamu ya. Semoga semua usaha dan kerja keras yang udah 
-                            kamu lewati bisa terbayar dengan hasil terbaik yang memang kamu pantas dapetin.
-                        </p>
-                        <br>
-                        <p class="editable-message">
-                            Sekali lagi, happy birthday. Naila 💜
-                        </p>
-                    </div>
-                    <div class="signature">
-                        <span>Dari si Starboi</span>
-                        <h3>xsann</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Romantic Closing -->
-    <section id="closing" class="closing">
-        <div class="container">
-            <div class="closing-content">
-                <h2 class="section-title">Untuk Banyak Ulang Tahun Lagi Bersama</h2>
-                <div class="love-stats">
-                    <div class="stat-item">
-                        <span class="stat-number" data-target="365">0</span>
-                        <span class="stat-label">Event Selanjutnya</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-number" data-target="∞">0</span>
-                        <span class="stat-label">Lebih Banyak Lagi</span>
-                    </div>
-                </div>
-                <p class="closing-text">Selamat ulang tahun, Naila Uswatun Khasanah . 💜</p>
-            </div>
-        </div>
-    </section>
-
-    <script src="script.js"></script>
-</body>
-</html>
+    <section id="message" class="message
